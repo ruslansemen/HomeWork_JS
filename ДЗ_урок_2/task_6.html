@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+        var a, b, c;
+
+        function mathOperation(arg1, arg2, operation) {
+
+
+            switch (operation) {
+                case 1:
+                    return arg1 + arg2;
+                    break;
+                case 2:
+                    return arg1 - arg2;
+                    break;
+                case 3:
+                    return arg1 * arg2;
+                    break;
+                case 4:
+                    return arg1 / arg2;
+                    break;
+                default:
+                    return "Вы ввели некорректное значение номера арифметической операции. Попробуйте ещё раз.";
+                    break;
+            }
+        }
+        a = parseInt(prompt("Введите значение переменной a "));
+        b = parseInt(prompt("Введите значение переменной b "));
+        c = parseInt(prompt("Введите номер арифметической операции над переменными a и b. Соответственно 1 - сложение, 2 - вычитание, 3 - умножение, 4 - деление."));
+
+        alert("Результаты будут выведены в консоль.");
+
+        console.log(mathOperation(a, b, c));
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

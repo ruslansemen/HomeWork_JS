@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        /* 5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. Обязательно использовать оператор return. */
+
+        function forOperation(num1, num2) {
+            var result;
+            result = (num1 * 2 + num2 * 3) - (num1 / 2 - num2 / num1);
+
+            return result;
+        }
+
+        var a = parseInt(prompt('Введите число a = ...'));
+        var b = parseInt(prompt('Введите число b = ...'));
+        alert('Результаты выводятся в консоль.')
+
+        console.log(forOperation(a, b));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

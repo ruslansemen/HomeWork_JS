@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        /* 8) *С помощью рекурсии организовать функцию возведения числа в степень. Формат: function power(val, pow), где val – заданное число, pow – степень. */
+        var current = 1;
+        var i = 1;
+
+        function power(val, pow) {
+
+            if (pow == 0) {
+                return 1
+            }
+
+            if (i <= pow) {
+                current *= val;
+                i++;
+                power(val, pow);
+            }
+            return current;
+        }
+
+        var a = parseInt(prompt("Введите число, возводимое в степень"));
+        var b = parseInt(prompt("Введите степень /целое число, не меньше 0/"));
+
+        if (b < 0) {
+            alert('Степень нужно задать целым числом, не меньше 0. Попробуйте ещё раз.')
+        } else {
+            alert('Результаты будут выведены в консоль');
+            console.log(a + " в степени " + b + " = " + power(a, b));
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
