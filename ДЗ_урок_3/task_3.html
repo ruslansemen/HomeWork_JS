@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 3</title>
+
+    <script>
+        /* 3. Товары в корзине хранятся в массиве. Задачи:
+           a) Организовать такой массив для хранения товаров в корзине;
+           b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины. */
+
+        // задаём функцию для подсчёта стоимости товаров в корзине
+        function countBasketPrice(arr) {
+            var summ = 0;
+            for (var j = 0; j < arr.length; j++) {
+                summ += arr[j];
+            }
+            return summ;
+        }
+
+        // задаём массив для хранения цены каждого товара
+        var BasketPrice = [];
+
+        // заполняем массив случайными числами из диапазона 100 ... 500
+        for (var i = 0; i <= 10; i++) {
+            BasketPrice.push(Math.floor(Math.random() * 400 + 100))
+        }
+
+        console.log(BasketPrice); // выведем в консоль массив с ценами каждого товара в корзине
+        console.log(countBasketPrice(BasketPrice)); // выведем в консоль сумму всех товаров в корзине
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
